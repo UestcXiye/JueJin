@@ -1,0 +1,337 @@
+/* header区域*/
+#body-header {
+    height: 68px;
+    min-width: 600px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 图标 */
+.header-logo {
+    float: left;
+    margin: 22px 0 0 60px;
+    cursor: pointer;
+}
+
+#header-logo {
+    width: 106px;
+}
+
+/* 图标旁边列表 */
+.header-list li {
+    height: 43px;
+    margin: 24px 0 0 25px;
+    float: left;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.header-list li:hover {
+    border-bottom: 2px solid rgb(30, 143, 255);
+    color: #696d70;
+}
+
+/* 首页下拉列表 */
+.header-list-lis {
+    position: absolute;
+    left: 133px;
+    top: 50px;
+    width: 150px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 #cfd1d4;
+    z-index: 5;
+}
+
+.header-list-lis ul {
+    margin: 10px 58px;
+}
+
+.header-list-lis li {
+    height: 41px;
+    width: 32px;
+    padding: 2px;
+    font-size: .9rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.header-list-lis li:hover {
+    border-bottom: 3px solid rgb(30, 143, 255);
+
+}
+
+.header-list-lis-arrow {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 203px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+/* 登录框按钮 */
+.header-login button {
+    float: right;
+    width: 65px;
+    height: 36px;
+    margin: 17px 65px 0 0;
+    border: 1px solid rgba(30, 128, 255, .3);
+    border-radius: 5px;
+    background-color: rgba(30, 128, 255, .05);
+    color: rgb(30, 143, 255);
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.header-login button:hover {
+    border: 1px solid rgba(30, 128, 255, .8);
+    background-color: rgba(28, 108, 211, 0.1);
+}
+
+/* 通知按钮 */
+.header-inform {
+    float: right;
+    margin: 22px 25px 0 0;
+    cursor: pointer;
+}
+
+.header-inform-img {
+    width: 24px;
+    height: 24px;
+    background-image: url('image/inform-logo-off.png');
+    background-size: 24px 24px;
+}
+
+.header-inform-img:hover {
+    background-image: url('image/inform-logo-on.png');
+}
+
+/* 会员 */
+.header-vip {
+    float: right;
+    margin: 22px 25px 0 0;
+    cursor: pointer;
+}
+
+.header-vip #header-vip {
+    float: right;
+    margin: 8px 0 0 5px;
+    color: #86909c;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+/* 创作者中心 */
+.header-creation {
+    float: left;
+}
+
+.header-creation button {
+    float: left;
+    height: 38px;
+    background-color: rgb(30, 128, 255);
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+#header-creation-rightBtn {
+    width: 30px;
+    margin: 15px 0 0 0;
+    border-left: 1px solid hsla(0, 0%, 100%, .1);
+    border-radius: 0 3px 3px 0;
+}
+
+#header-creation-leftBtn {
+    width: 100px;
+    margin: 15px 0 0 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.header-creation button:hover {
+    background-color: rgb(17, 113, 238);
+}
+
+/* 创作者中心下拉列表 */
+.header-creation-list {
+    position: absolute;
+    right: 290px;
+    top: 60px;
+    height: 180px;
+    width: 135px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 #cfd1d4;
+}
+
+.header-creation-list ul {
+    margin: 10px 0 0 12px;
+}
+
+.header-creation-list li {
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.header-creation-list li:hover {
+    background-color: rgb(249, 249, 249);
+}
+
+/* 搜索框 */
+.header-search {
+    float: left;
+    margin: 17px 30px 0 0;
+    border: 1px solid #c2c8d1;
+    border-radius: 5px;
+}
+
+#header-search-btn {
+    float: left;
+    height: 30px;
+    width: 50px;
+    margin: 2px;
+    background-color: rgb(242, 243, 245);
+    border-radius: 3px;
+    border: none;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.header-search input {
+    float: left;
+    height: 26px;
+    width: 300px;
+    margin: 4px 0 4px 15px;
+    border: none;
+    outline: none;
+    transition: width 0.3s ease;
+}
+
+.moveFather {
+    float: right;
+    margin-right: 30px;
+    width: 535px;
+    height: 56px;
+    overflow: hidden;
+}
+
+.moveChild {
+    float: left;
+    width: 1000px;
+}
+
+/* 响应式 */
+@media screen and (max-width:1520px) {
+    .header-logo {
+        margin: 22px 0 0 30px;
+    }
+
+    .header-login button {
+        margin: 17px 40px 0 0;
+    }
+
+    .header-creation-list {
+        right: 220px;
+    }
+}
+
+@media screen and (max-width:1360px) {
+    .header-search input {
+        width: 150px !important;
+    }
+
+    .moveFather {
+        width: 385px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .header-search input {
+        width: 225px !important;
+    }
+
+    .moveFather {
+        width: 460px;
+    }
+
+    .disappearFirst {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header-list-lis {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .header-list-lis-arrow {
+        display: block;
+    }
+
+    .disappearSecond {
+        display: none;
+    }
+
+    .header-list li {
+        font-size: .9rem;
+        margin: 21px 0 0 25px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .header-creation {
+        display: none;
+    }
+
+    .header-creation-list {
+        display: none !important;
+    }
+
+    .moveFather {
+        width: 300px;
+    }
+
+    .header-search {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #header-vip {
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .header-vip img {
+        display: none;
+    }
+
+    .moveFather {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header-search input {
+        width: 150px !important;
+    }
+
+    .moveFather {
+        width: 225px
+    }
+}

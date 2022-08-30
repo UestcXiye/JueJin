@@ -1,0 +1,59 @@
+/* header 下方导航栏 */
+nav {
+    height: 50px;
+    width: 100%;
+    margin-top: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-mainUl {
+    margin-left: 260px;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-mainUl li {
+    float: left;
+    height: 50px;
+    margin: 0 13px;
+    font-size: .9rem;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-mainUl li a:hover {
+    color: #007fff;
+}
+
+.nav-ChildUl {
+    display: none;
+    position: absolute;
+    top: 115px;
+    height: 180px;
+    width: 310px;
+    box-shadow: 0 0 20px 0 #cfd1d4;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+}
+
+.nav-ChildUl li {
+    float: left;
+    height: 20px;
+    margin: 9px 7px;
+    padding: 2px 6px;
+    border-radius: 16px;
+    font-size: 13px;
+    background-color: rgb(234, 236, 236);
+    cursor: pointer;
+}
+
+.nav-ChildUl li a:hover {
+    color: #007fff;
+}
+
+@media screen and (max-width:1040px) {
+    .nav-mainUl {
+        margin: 0 auto;
+    }
+}

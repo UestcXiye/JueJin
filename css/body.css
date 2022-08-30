@@ -1,0 +1,39 @@
+/* 整体配置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(244,245,245);
+    color:#696d70;
+    min-width: 600px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #696d70;
+}
+input::-webkit-input-placeholder {
+    color: #939597;
+}
+/* 火狐 Mozilla Firefox 4 to 18 */ 
+input:-moz-placeholder {
+    color: #939597;
+}
+/* 火狐 Mozilla Firefox 19+ */ 
+input::-moz-placeholder {
+    color: #939597;
+}
+/* Internet Explorer 10+ */ 
+input:-ms-input-placeholder {
+    color: #939597;
+}
+.header-and-nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(244,245,245);
+    z-index: 4;
+}

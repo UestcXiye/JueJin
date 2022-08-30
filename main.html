@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>掘金</title>
+        <link rel="stylesheet" href="/iconfont/iconfont.css">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/aside.css">
+        <link rel="stylesheet" href="css/mainHeader.css">
+        <link rel="stylesheet" href="css/mainUl.css">
+        <script src="js/template-web.js"></script>
+    </head>
+
+    <body>
+        <!-- 此盒子包含header和nav -->
+        <div class="header-and-nav">
+            <header id="body-header">
+                <!-- 图标 -->
+                <div class="header-logo">
+                    <img src="image/juejin-logo.png" id="header-logo" alt="">
+                </div>
+                <!-- 图标旁边列表 -->
+                <div class="header-list">
+                    <ul>
+                        <li><a>首页</a></li>
+                        <li class="disappearSecond"><a>沸点</a></li>
+                        <li class="disappearSecond"><a>课程</a></li>
+                        <li class="disappearSecond"><a>直播</a></li>
+                        <li class="disappearSecond"><a>活动</a></li>
+                        <li class="disappearSecond"><a>商城</a></li>
+                        <li class="disappearFirst"><a>APP</a></li>
+                        <li class="disappearFirst"><a>插件</a></li>
+                    </ul>
+                </div>
+                <!-- 首页下拉列表 -->
+                <div class="header-list-lis" style="display: none;">
+                    <ul>
+                        <li>首页</li>
+                        <li>沸点</li>
+                        <li>课程</li>
+                        <li>直播</li>
+                        <li>活动</li>
+                        <li>商城</li>
+                    </ul>
+                </div>
+                <div class="iconfont icon-down_s header-list-lis-arrow"></div>
+                <!-- 登录框按钮 -->
+                <div class="header-login">
+                    <button>登录</button>
+                </div>
+                <!-- 通知按钮 -->
+                <div class="header-inform">
+                    <img class="header-inform-img" src="image/inform-logo-off.png" alt="">
+                </div>
+                <!-- 会员 -->
+                <div class="header-vip">
+                    <img src="image/juejin-vip.svg" alt="">
+                    <div id="header-vip">会员</div>
+                </div>
+                <!-- 创作者中心下拉列表 -->
+                <div class="header-creation-list" style="display:none">
+                    <ul>
+                        <li class="iconfont icon-edit">&nbsp&nbsp&nbsp写文章</li>
+                        <li class="iconfont icon-hot">&nbsp&nbsp&nbsp发沸点</li>
+                        <li class="iconfont icon-post">&nbsp&nbsp&nbsp写代码</li>
+                        <li class="iconfont icon-edit">&nbsp&nbsp&nbsp草稿箱</li>
+                    </ul>
+                </div>
+                <!-- 此盒子包含创作者中心和搜索框 -->
+                <div class="moveFather">
+                    <div class="moveChild">
+                        <!-- 搜索框 -->
+                        <form class="header-search">
+                            <input type="text" placeholder="探索稀土掘金">
+                            <button id="header-search-btn" class="iconfont icon-search">
+                            </button>
+                        </form>
+                        <!-- 创作者中心 -->
+                        <div class="header-creation">
+                            <button id="header-creation-leftBtn">创作者中心</button>
+                            <button id="header-creation-rightBtn" class="iconfont icon-down_s"></button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <script src="js/header.js"></script>
+
+            <nav>
+                <ul class="nav-mainUl">
+                    <li><a>综合</a></li>
+                    <li><a>后端</a></li>
+                    <li><a>前端</a></li>
+                    <li><a>Android</a></li>
+                    <li><a>iOS</a></li>
+                    <li><a>人工智能</a></li>
+                    <li><a>开发工具</a></li>
+                    <li><a>代码人生</a></li>
+                    <li><a>阅读</a></li>
+                </ul>
+                <!-- 以下每个ul代表一个下拉列表 -->
+                <ul class="nav-ChildUl ChildUl-backend"></ul>
+                <ul class="nav-ChildUl ChildUl-frontend"></ul>
+                <ul class="nav-ChildUl ChildUl-Android"></ul>
+                <ul class="nav-ChildUl ChildUl-iOS"></ul>
+                <ul class="nav-ChildUl ChildUl-ai"></ul>
+                <ul class="nav-ChildUl ChildUl-freebie"></ul>
+                <ul class="nav-ChildUl ChildUl-career"></ul>
+                <ul class="nav-ChildUl ChildUl-article"></ul>
+            </nav>
+            <script src="js/nav.js"></script>
+        </div>
+        <main>
+            <!-- 此盒子包含无限滚动列表和上方的导航栏（推荐|最新|热榜） -->
+            <div class="main-box">
+                <header id="small-header">
+                    <ul class="small-header-ul">
+                        <li class="small-header-li"><a>推荐</a></li>
+                        <li class="small-header-li"><a>最新</a></li>
+                        <li class="small-header-li"><a>热榜</a></li>
+                    </ul>
+                </header>
+                <!-- 无限滚动列表 -->
+                <ul class="main-ul">
+                    <!-- 置顶的li -->
+                    <li class="main-ul-li">
+                        <ul class="main-ul-li-header">
+                            <li class="userName">掘金酱</li>
+                            <li class="releaseDate">29天前</li>
+                        </ul>
+                        <a>
+                            <h3 class="title">8月更文活动倒计时！</h3>
+                            <p class="article-first">
+                                在这个热情的8月，「掘金·日新计划」再次起航，超多创作奖励等你来拿！
+                            </p>
+                            <div class="cover">
+                                <img src="image/gwtz.webp" alt="">
+                            </div>
+                            <div></div>
+                        </a>
+                    </li>
+                    <!-- 其他li -->
+                    <!-- 定义模板 -->
+                    <script type="text/html" id="tpl-main-li">
+                        <div class="templateBox">
+                            <li class="main-ul-li">
+                                <ul class="main-ul-li-header">
+                                    <li class="userName">{{userName}}</li>
+                                    <li class="releaseDate">{{releaseDate}}</li>
+                                    <li class="label">{{label}}</li>
+                                </ul>
+                                <a>
+                                    <h3 class="title">{{title}}</h3>
+                                    <p class="article">{{article}}</p>
+                                    <div class="cover">
+                                        <img src="image/gwtz.webp" alt="">
+                                    </div>
+                                </a>
+                                <ul class="main-ul-li-footer">
+                                    <li>
+                                        <div class="iconfont icon-browse"></div>&nbsp<a>1000</a>
+                                    </li>
+                                    <li>
+                                        <div class="iconfont icon-good"></div>&nbsp<a>100</a>
+                                    </li>
+                                    <li>
+                                        <div class="iconfont icon-comment"></div>&nbsp<a>10</a>
+                                    </li>
+                                </ul>
+                                <div class="iconfont icon-close main-ul-li-footer-close"></div>
+                            </li>
+                        </div>
+                    </script>
+                    <script src="js/art-template.js"></script>
+                </ul>
+            </div>
+            <!-- 侧边栏 -->
+            <aside>
+                <ul>
+                    <li class="asideLi aside-first">
+                        <div class="iconfont icon-shijian" id="good"></div>
+                        <div id="goto">去签到</div>
+                        <p>点亮你在社区的每一天</p>
+                    </li>
+                    <div class="asideLi-fixed asideLi">
+                        <li class="asideLi imgBox">
+                            <a>
+                                <img src="image/kfzdh.webp" alt="">
+                            </a>
+                            <a class="imgBox-advertisement">广告</a>
+                            <div class="iconfont icon-RectangleCopy imgBox-eliminate"></div>
+                        </li>
+                        <li class="asideLi imgBox">
+                            <a>
+                                <img src="image/ydtz.webp" alt="">
+                            </a>
+                            <a class="imgBox-advertisement">广告</a>
+                            <div class="iconfont icon-RectangleCopy imgBox-eliminate"></div>
+                        </li>
+                        <li class="asideLi aside-fourth">
+                            <img src="image/erweima.png" alt="">
+                            <a id="first">下载稀土掘金APP</a>
+                            <a id="second">一个帮助开发者成长的社区</a>
+                        </li>
+                    </div>
+                    <li class="asideLi aside-fifth">
+                        <ul>
+                            <li class="aside-fifth-li aside-fifth-firstLi">
+                                <a class="iconfont icon-paihangbang"></a>
+                                <a id="aside-fifth-author">作者榜</a>
+                            </li>
+                            <li class="aside-fifth-li aside-fifth-secondLi">
+                                <ul>
+                                    <li>欧西里斯之天空龙</li>
+                                    <li>欧贝利斯克之巨神兵</li>
+                                    <li>拉之翼神龙</li>
+                                </ul>
+                            </li>
+                            <li class="aside-fifth-li aside-fifth-thirdLi">
+                                <a>完整榜单</a>
+                                <a class="iconfont icon-arrow-right"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="asideLi aside-sixth">
+                        <ul>
+                            <li>
+                                <a>
+                                    <img src="image/manyouzhinan.png" alt="">
+                                    <a class="aside-sixth-smallA">稀土掘金漫游指南</a>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="image/liulanqichajian.png" alt="">
+                                    <a class="aside-sixth-smallA">安装掘金浏览器插件</a>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="image/fanyijihua.png" alt="">
+                                    <a class="aside-sixth-smallA">前往掘金翻译计划</a>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <script src="js/aside.js"></script>
+            <!-- 回到顶部按钮 -->
+            <div class="toTop iconfont icon-shangchuan"></div>
+            <div class="toTopTips">回到顶部</div>
+        </main>
+        <script src="js/mainUl.js"></script>
+    </body>
+
+</html>

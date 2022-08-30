@@ -1,0 +1,19 @@
+/* main区域 （推荐|最新|热榜）样式 */
+
+.small-header-ul{
+    float: left;
+    margin:20px 0 0 15px;
+}
+.small-header-li{
+    float: left;
+    padding: 0 13px;
+    font-size: 14px;
+    line-height: 13px;
+    cursor: pointer;
+}
+.small-header-ul a:hover{
+    color: #007fff;
+}
+.small-header-li+.small-header-li{
+    border-left:2px solid rgb(231, 231, 231);
+}

@@ -1,0 +1,155 @@
+/* 无限列表样式 */
+
+/* 置顶li样式 */
+.article-first {
+    display: block;
+    float: left;
+    width: 78%;
+    height: 50px;
+    margin-top: 10px;
+    border: 0px;
+    line-height: 25px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 模板样式 */
+.templateBox {
+    position: relative;
+    width: 100%;
+    height: 138px;
+}
+
+.templateBox:hover {
+    background-color: rgb(249, 249, 249);
+}
+
+.main-ul-li {
+    width: 95%;
+    height: 138px;
+    margin: 0 18px;
+    border-bottom: 2px solid rgb(244, 245, 245);
+    cursor: pointer;
+}
+
+.main-ul-li-header {
+    width: 100%;
+    height: 41px;
+    margin-left: -10px;
+}
+
+.main-ul-li-header li {
+    float: left;
+    padding: 0 10px;
+    margin: 12px 0;
+    font-size: 13px;
+}
+
+.main-ul-li-header li:nth-child(1):hover {
+    color: rgb(30, 143, 255);
+}
+
+.main-ul-li-header li+li {
+    border-left: 2px solid rgb(231, 231, 231);
+}
+
+.title {
+    display: block;
+    float: left;
+    width: 78%;
+    font-size: 17px;
+    white-space: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article {
+    display: block;
+    float: left;
+    width: 78%;
+    height: 25px;
+    margin-top: 10px;
+    border: 0px;
+    line-height: 25px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cover img {
+    float: right;
+    height: 82px;
+    margin: -18px 0;
+}
+
+.main-ul-li-footer {
+    float: left;
+    width: 78%;
+    height: 20px;
+    margin-left: -10px;
+}
+
+.main-ul-li-footer li {
+    float: left;
+    padding: 10px;
+}
+
+.main-ul-li-footer li+li:hover {
+    color: rgb(30, 143, 255);
+}
+
+.main-ul-li-footer li .iconfont {
+    float: left;
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+.main-ul-li-footer li a {
+    font-size: 13px;
+}
+
+.main-ul-li-footer-close {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    color: #bababa;
+}
+
+.main-ul-li-footer-close:hover {
+    color: rgb(30, 143, 255);
+    font-weight: bold;
+}
+
+/* 回到顶部按钮 */
+.toTop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 #cfd1d4;
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.toTopTips {
+    position: fixed;
+    display: none;
+    position: fixed;
+    right: 56px;
+    bottom: 87px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid rgb(33, 32, 32);
+    color: rgb(33, 32, 32);
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}

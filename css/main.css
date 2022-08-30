@@ -1,0 +1,29 @@
+/* 页面主体内容区整体布局 */
+main{
+    width: 1000px;
+    height: 3000px;
+    margin: 140px auto;
+}
+.main-box{
+    float: left;
+    width: 740px;
+}
+#small-header{
+    height: 50px;
+    background-color: rgb(255,255,255);
+}
+.main-ul{
+    margin-top: 2px;
+    background-color: rgb(255,255,255);
+}
+aside{
+    float: right;
+    width: 240px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:1000px){
+    .asideLi{display: none;}
+    main{width: 100%;}
+    .main-box{width: 100%;}
+}
